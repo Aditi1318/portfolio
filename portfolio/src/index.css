@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --gradient-primary: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    --gradient-secondary: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+    --gradient-accent: linear-gradient(135deg, #67e8f9 0%, #22d3ee 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cool font classes */
+.font-orbitron {
+    font-family: "Orbitron", monospace;
+}
+
+.font-space-grotesk {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.font-jetbrains {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Futuristic text effect */
+.futuristic-text {
+    font-family: "Orbitron", monospace;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #06b6d4, #22d3ee, #67e8f9, #06b6d4);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Glitch text effect */
+.glitch-text {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    position: relative;
+    color: #06b6d4;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch-text::before {
+    animation: glitch-1 0.5s infinite;
+    color: #ff0080;
+    z-index: -1;
+}
+
+.glitch-text::after {
+    animation: glitch-2 0.5s infinite;
+    color: #00ff80;
+    z-index: -2;
+}
+
+@keyframes glitch-1 {
+    0%,
+    14%,
+    15%,
+    49%,
+    50%,
+    99%,
+    100% {
+        transform: translate(0);
+    }
+    15%,
+    49% {
+        transform: translate(-2px, 2px);
+    }
+}
+
+@keyframes glitch-2 {
+    0%,
+    20%,
+    21%,
+    62%,
+    63%,
+    99%,
+    100% {
+        transform: translate(0);
+    }
+    21%,
+    62% {
+        transform: translate(2px, -2px);
+    }
+}
+
+/* Neon text effect */
+.neon-text {
+    font-family: "Orbitron", monospace;
+    color: #06b6d4;
+    text-shadow: 0 0 5px #06b6d4, 0 0 10px #06b6d4, 0 0 15px #06b6d4, 0 0 20px #06b6d4, 0 0 35px #06b6d4,
+        0 0 40px #06b6d4;
+    animation: neon-flicker 2s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 5px #06b6d4, 0 0 10px #06b6d4, 0 0 15px #06b6d4, 0 0 20px #06b6d4, 0 0 35px #06b6d4,
+            0 0 40px #06b6d4;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+/* Typewriter with modern styling */
+.modern-typewriter {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.glass {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-cyan {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.glass-dark-cyan {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(6, 182, 212, 0.2);
+    border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+.floating-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.glow-effect {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.cyan-glow-effect {
+    box-shadow: 0 0 40px rgba(6, 182, 212, 0.6);
+    animation: cyan-glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+    }
+    to {
+        box-shadow: 0 0 60px rgba(6, 182, 212, 0.8);
+    }
+}
+
+@keyframes cyan-glow {
+    from {
+        box-shadow: 0 0 40px rgba(6, 182, 212, 0.6);
+    }
+    to {
+        box-shadow: 0 0 80px rgba(34, 211, 238, 0.8);
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid #06b6d4;
+    white-space: nowrap;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typewriter-cyan {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #06b6d4;
+    }
+}
+
+.particle {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.particle-1 {
+    animation: particle-float-1 20s infinite linear;
+}
+
+.particle-2 {
+    animation: particle-float-2 25s infinite linear;
+}
+
+.particle-3 {
+    animation: particle-float-3 30s infinite linear;
+}
+
+@keyframes particle-float-1 {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+    }
+}
+
+@keyframes particle-float-2 {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100vh) rotate(-360deg);
+    }
+}
+
+@keyframes particle-float-3 {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100vh) rotate(180deg);
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cyan-gradient-text {
+    background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-card {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: rotateY(5deg) rotateX(5deg) scale(1.05);
+}
+
+.skill-bar {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #06b6d4, #0891b2);
+    border-radius: inherit;
+    transition: width 1s ease-in-out;
+}
+
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #06b6d4, #22d3ee);
+    transform-origin: left;
+    z-index: 1000;
+}
+
+/* Download button animation */
+.download-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.download-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.download-btn:hover::before {
+    left: 100%;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+    .futuristic-text {
+        letter-spacing: 1px;
+    }
+
+    .neon-text {
+        text-shadow: 0 0 3px #06b6d4, 0 0 6px #06b6d4, 0 0 9px #06b6d4, 0 0 12px #06b6d4;
+    }
+}
