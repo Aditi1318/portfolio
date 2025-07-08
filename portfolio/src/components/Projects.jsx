@@ -60,7 +60,7 @@ const Projects = () => {
             description: "A stunning portfolio website with glassmorphism design and smooth animations.",
             image: "/portfolio.webp",
             tech: ["React", "JavaScript", "Framer Motion", "Tailwind CSS"],
-            liveUrl: "https://selfie-booth-t1br.vercel.app/",
+            liveUrl: "https://portfolio-1ubm.vercel.app/",
             githubUrl: "https://github.com/Aditi1318/portfolio",
             category: "Web App",
             icon: Monitor,
