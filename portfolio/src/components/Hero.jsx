@@ -11,7 +11,14 @@ const Hero = () => {
     const [showCursor, setShowCursor] = useState(true);
 
     const baseText = "Hi, I'm Aditi — ";
-    const roles = ["Java Developer", "Software Engineer", "Problem Solver", "Tech Enthusiast", "Creative Thinker"];
+    const roles = [
+        "Java Developer",
+        "Web Developer",
+        "Software Engineer",
+        "Problem Solver",
+        "Tech Enthusiast",
+        "Creative Thinker",
+    ];
 
     useEffect(() => {
         const currentRole = roles[currentRoleIndex];
