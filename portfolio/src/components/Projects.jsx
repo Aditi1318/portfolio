@@ -28,7 +28,7 @@ const Projects = () => {
             image: "/sweet-shop.jpg",
             tech: ["ReactJS", "Spring Boot", "MySQL", "TailwindCSS", "Docker", "Spring Security"],
             liveUrl: "https://sweet-shop-app.vercel.app/",
-            githubUrl: "https://github.com/Aditi1318/Sweet-Shop-Management-System",
+            githubUrl: "https://github.com/Aditi1318/Sweet-Shop-App",
             category: "Full Stack",
             icon: Store,
         },
