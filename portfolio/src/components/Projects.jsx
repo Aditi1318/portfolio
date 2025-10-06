@@ -48,7 +48,7 @@ const Projects = () => {
                 "Docker",
                 "Spring Security",
             ],
-            liveUrl: "https://github.com/Aditi1318/BOOK-AND-STYLE",
+            liveUrl: "https://book-and-style.vercel.app/",
             githubUrl: "https://github.com/Aditi1318/BOOK-AND-STYLE",
             category: "Full Stack",
             icon: Globe,
