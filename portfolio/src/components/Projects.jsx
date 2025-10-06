@@ -1,6 +1,18 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {Github, ExternalLink, Code, Palette, Zap, MessageCircle, Globe, Puzzle, GlobeIcon, Monitor} from "lucide-react";
+import {
+    Github,
+    ExternalLink,
+    Code,
+    Palette,
+    Zap,
+    MessageCircle,
+    Globe,
+    Puzzle,
+    GlobeIcon,
+    Monitor,
+    Store,
+} from "lucide-react";
 import {useTheme} from "../contexts/ThemeContext";
 import {useScrollAnimation} from "../hooks/useScrollAnimation";
 
