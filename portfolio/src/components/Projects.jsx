@@ -10,6 +10,17 @@ const Projects = () => {
 
     const projects = [
         {
+            id: 7,
+            title: "Sweet Shop Management System",
+            description: "A comprehensive management system for a sweet shop, designed to streamline daily operations.",
+            image: "/sweet-shop.jpg",
+            tech: ["ReactJS", "Spring Boot", "MySQL", "TailwindCSS", "Docker", "Spring Security"],
+            liveUrl: "https://sweet-shop-app.vercel.app/",
+            githubUrl: "https://github.com/Aditi1318/Sweet-Shop-Management-System",
+            category: "Full Stack",
+            icon: Store,
+        },
+        {
             id: 5,
             title: "Selfie Booth",
             description:
@@ -49,7 +60,7 @@ const Projects = () => {
                 "A feature-rich real-time chat platform built using Java, Spring Boot, React, and WebSockets. The application enables instant messaging, file sharing, emojis, andcreating an engaging user experience similar to modern messaging platforms.",
             image: "/chat.jpg",
             tech: ["ReactJS", "Spring Boot", "MongoDB", "Socket.io", "TailwindCSS"],
-            liveUrl: "https://github.com/Aditi1318/Chat-Room",
+            liveUrl: "https://chat-room-eight-amber.vercel.app/",
             githubUrl: "https://github.com/Aditi1318/Chat-Room",
             category: "Full Stack",
             icon: MessageCircle,
@@ -60,7 +71,7 @@ const Projects = () => {
             description: "A stunning portfolio website with glassmorphism design and smooth animations.",
             image: "/portfolio.webp",
             tech: ["React", "JavaScript", "Framer Motion", "Tailwind CSS"],
-            liveUrl: "https://portfolio-1ubm.vercel.app/",
+            liveUrl: "https://aditi-diwakar.vercel.app/",
             githubUrl: "https://github.com/Aditi1318/portfolio",
             category: "Web App",
             icon: Monitor,
