@@ -102,12 +102,12 @@ const Projects = () => {
 
         {
             id: 6,
-            title: "PlayVerse AI (coming soon..)",
+            title: "PlayVerse AI",
             description:
                 "PlayVerse AI is a voice-controlled web app featuring classic and casual games like Ludo, Chess, and Snake & Ladder. Users can play and navigate games hands-free using a built-in AI voice assistant.",
             image: "/game.png",
             tech: ["ReactJS", "Tailwind CSS", "Contentful", "Styled Components", "Speech Recognition API"],
-            liveUrl: "https://github.com/Aditi1318/playverse-ai",
+            liveUrl: "https://playverse-ai.vercel.app/",
             githubUrl: "https://github.com/Aditi1318/playverse-ai",
             category: "Web App",
             icon: Puzzle,
